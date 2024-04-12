@@ -1,0 +1,94 @@
+<ul class="sidebar-menu">
+  <li class="menu-header">Dashboard</li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="nav-link" href="{% url 'general_dashboard_url_name' %}">General Dashboard</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'ecommerce_dashboard_url_name' %}">Ecommerce Dashboard</a>
+      </li>
+    </ul>
+  </li>
+  <li class="menu-header">Starter</li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Layout</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="nav-link" href="{% url 'layout_default_url_name' %}">Default Layout</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a class="nav-link" href="{% url 'blank_url_name' %}"><i class="far fa-square"></i> <span>Blank Page</span></a>
+  </li>
+  <li class="menu-header">Pages</li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i> <span>Auth</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{% url 'auth_forgot_password_url_name' %}">Forgot Password</a>
+      </li>
+      <li>
+        <a href="{% url 'auth_login_url_name' %}">Login</a>
+      </li>
+      <li>
+        <a href="{% url 'auth_login_2_url_name' %}">Login 2</a>
+      </li>
+      <li>
+        <a href="{% url 'auth_register_url_name' %}">Register</a>
+      </li>
+      <li>
+        <a href="{% url 'auth_reset_password_url_name' %}">Reset Password</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i> <span>Errors</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="nav-link" href="{% url 'errors_503_url_name' %}">503</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'errors_403_url_name' %}">403</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'errors_404_url_name' %}">404</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'errors_500_url_name' %}">500</a>
+      </li>
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i> <span>Features</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="nav-link" href="{% url 'features_activities_url_name' %}">Activities</a>
+      </li>
+      <!-- Other Features items removed for brevity -->
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i> <span>Utilities</span></a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="{% url 'utilities_contact_url_name' %}">Contact</a>
+      </li>
+      <li>
+        <a class="nav-link" href="{% url 'utilities_invoice_url_name' %}">Invoice</a>
+      </li>
+      <li>
+        <a href="{% url 'utilities_subscribe_url_name' %}">Subscribe</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a class="nav-link" href="{% url 'credits_url_name' %}"><i class="fas fa-pencil-ruler"></i> <span>Credits</span></a>
+  </li>
+</ul>
+
+<div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+  <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split"><i class="fas fa-rocket"></i> Documentation</a>
+</div>
